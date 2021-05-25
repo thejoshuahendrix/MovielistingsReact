@@ -21,7 +21,7 @@ class App extends Component {
     //  this.setState({movies: originalMovies});
     //},2000)
     const response = await fetch(
-      "https://api.themoviedb.org/3/movie/top_rated?api_key=b766695e55dc61d652c73046be58ee40"
+      "https://api.themoviedb.org/3/movie/top_rated?"//api_key=your api here"
     );
     const json = await response.json();
     this.setState({ movies: json.results });
